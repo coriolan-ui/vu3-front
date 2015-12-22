@@ -1,0 +1,14 @@
+body {
+  font: 400 14px/1.3 Roboto,sans-serif;
+  background: #eaeaea;
+  margin: 0;
+  position: relative;
+  min-width: 320px;
+  max-width: 1792px;
+  color: #424242;
+}
+
+.wrapper {
+  @include outer-container;
+  overflow: hidden;
+}
