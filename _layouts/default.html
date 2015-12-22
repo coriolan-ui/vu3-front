@@ -12,32 +12,21 @@ layout: compress
   <meta name="description" content="Coriolan UI">
   <meta name="keywords" content="Coriolan UI">
 
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500:latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400italic:latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
 </head>
-<body>
+<body class="body">
 
-  {{ content }}
+<div class="wrapper">
+  {% include sidebar.html %}
+  {% include content.html %}
+</div>
 
-  <script>
-    var WebFontConfig = {
-      google: { families: [ 
-        'Roboto:400,300,500:latin',
-        'PT+Serif:400italic:latin,cyrillic',
-        'Material+Icons'
-      ] }
-    };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
+<div class="sliding-panel-fade-screen"></div>
+
   <script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.11.3.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   <script>

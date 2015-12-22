@@ -8,6 +8,10 @@ body {
   color: #424242;
 }
 
+.is-overflowed {
+  overflow: hidden;
+}
+
 .wrapper {
   @include outer-container;
   overflow: hidden;
