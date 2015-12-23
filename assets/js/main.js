@@ -6,7 +6,24 @@ $(document).ready(function(){
   });
 });
 
+
+
+
 $(function() {
   $('.sidebar-menu a[href^="/coriolan-ui/' + location.pathname.split("/coriolan-ui/")[1] + '"]').addClass('active');
   $('.sidebar-menu a[href^="/game-hall/' + location.pathname.split("/game-hall/")[1] + '"]').addClass('active');
+});
+
+
+
+
+$('.open-popup-link').magnificPopup({
+  type: 'inline',
+  removalDelay: 500,
+  callbacks: {
+    beforeOpen: function() {
+       this.st.mainClass = this.st.el.attr('data-effect');
+    }
+  },
+  midClick: true,
 });
