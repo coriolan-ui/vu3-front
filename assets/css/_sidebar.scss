@@ -1,3 +1,9 @@
+@mixin sidebar-item {
+  padding-bottom: $m;
+  border-bottom: 1px solid rgba(#000, .25);
+  margin-bottom: $m;
+}
+
 .sliding-panel-content {  
   $sliding-panel-width: 300px;
 
@@ -7,21 +13,17 @@
   @include transition(all 0.25s ease-in-out);
   -webkit-overflow-scrolling: touch;
   z-index: 1041;
-  // overflow-y: scroll;
-  // box-sizing: border-box;
 
   &.is-visible {
     @include transform(translateX(0));
 
     &+.content {
-      // position: fixed;
       @include transform(translateX($sliding-panel-width));
     }
 
     .sliding-panel-close {
       display: inline-block;
     }
-
   }
 
   @include media($tablet) {
@@ -45,8 +47,8 @@
 
 .sliding-panel-close {
   position: absolute;
-  left: calc(100% + 16px);
-  top: 16px;
+  left: calc(100% + $m);
+  top: $m;
   display: none;
 }
 
@@ -55,48 +57,72 @@
   overflow: hidden;
   width: 300px;
   height: 100%;
-  // padding: 16px;
-  // box-sizing: border-box;
-  color: #fff;
-  background: #841f1b;
+  color: $sidebarColor;
+  background: $sidebarBg;
 
   &-scrollfix {
     position: relative;
     width: 300px+30px;
     height: 100%;
     overflow-y: auto;
-    // padding: 16px 16px+30px 16px 16px;
-    // box-sizing: border-box;
   }
 
   &-container {
     width: 300px;
-    padding: 16px;
+    padding: $m;
   }
 
   &-logo {
-    text-align: center;
-    margin-bottom: 16px;
-    display: block;
-    border-bottom: 1px solid #dbdbdb;
-    padding-bottom: 16px;
+    @include sidebar-item;
 
-    img {
-      max-width: 180px;
-      margin: auto;
+    a {
+      text-align: center;
       display: block;
+
+      img {
+        max-width: 180px;
+        margin: auto;
+        display: block;
+      }
     }
   }
 
+  &-promo {
+    display: table;
+    margin-bottom: $m;
+
+    &_image {
+      display: table-cell;
+      vertical-align: top;
+      overflow: hidden;
+      border-radius: 100px;
+      float: left;
+      margin-right: $m;
+
+      img {
+        display: block;
+      }
+    }
+    &_text {
+      display: table-cell;
+      vertical-align: top;
+    }
+    display: blog; //TIME
+  }
+
+  &-authorization {
+    @include sidebar-item;
+    display: blog; //TIME
+  }
+
   &-user {
-    margin-bottom: 16px;
-    border-bottom: 1px solid #dbdbdb;
-    padding-bottom: 16px;
+    @include sidebar-item;
+    display: none; //TIME
   }
 
   &-menu {
     list-style: none;
-    margin: 0;
+    margin: -$m 0 $m;
     padding: 0;
 
     li {
@@ -104,10 +130,12 @@
         display: block;
         text-decoration: none;
         color: #fff;
+        font-size: 16px;
+        padding: $m 0;
 
         &:hover,
         &.active {
-          color: #ffc668;
+          color: $firmColor;
         }
       }
     }
@@ -123,13 +151,9 @@
   margin: 20px auto;
 }
 
-/* 
-
-====== Zoom effect ======
-
-*/
+/* ====== Zoom effect ====== */
 .mfp-zoom-in {
-  
+
   /* start state */
   .mfp-with-anim {
     opacity: 0;
@@ -141,7 +165,7 @@
     opacity: 0;
     @include transition(all 0.3s ease-out);
   }
-  
+
   /* animate in */
   &.mfp-ready {
     .mfp-with-anim {
@@ -152,7 +176,7 @@
       opacity: 0.8;
     }
   }
-  
+
   /* animate out */
   &.mfp-removing {
     
@@ -163,7 +187,5 @@
     &.mfp-bg {
       opacity: 0;
     }
-    
   }
-  
 }

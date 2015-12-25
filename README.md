@@ -1,3 +1,3 @@
 # Coriolan UI
 
-[Demo](coriolanix.github.io)
+[coriolanix.github.io](http://coriolanix.github.io)

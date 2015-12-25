@@ -16,7 +16,7 @@
   @include transition(all .1s ease-in-out);
 
   &-primary {
-    background: #f5a623;
+    background: $firmColor;
     color: #fff;
 
     &:hover {
@@ -35,11 +35,15 @@
   }
   &-link {
     background: transparent;
-    color: #f5a623;
+    color: $firmColor;
     padding: 0;
 
     &:hover {
       color: #ffc668;
     }
   }
+}
+
+.btn + .btn {
+  margin-left: 4px;
 }
