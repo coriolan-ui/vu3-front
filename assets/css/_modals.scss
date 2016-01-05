@@ -1,0 +1,98 @@
+.mfp-content {
+  vertical-align: top;
+}
+
+/* ====== Zoom effect ====== */
+.mfp-zoom-in {
+
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    @include transition(all 0.2s ease-in-out); 
+    @include transform(scale(0.8)); 
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+    @include transition(all 0.3s ease-out);
+  }
+
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      @include transform(scale(1)); 
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      @include transform(scale(0.8)); 
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+  }
+}
+
+.modal {
+  position: relative;
+  background: #fff;
+  width:auto;
+  max-width: 440px;
+  margin: 40px auto;
+  text-align: center;
+  padding-bottom: $m;
+  border-radius: 4px;
+
+  &_caption {
+    font-size: 22px;
+    padding: 20px 55px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+  }
+
+  form {
+    padding: 0 $m;
+    margin-bottom: $m;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.mfp-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+  padding: 0;
+  cursor: pointer;
+  opacity: 1;
+
+  &:active {
+    top: 15px;
+  }
+
+  &.icon-close:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+}
+.mfp-close-btn-in .mfp-close {
+  color: #838d8f;
+}

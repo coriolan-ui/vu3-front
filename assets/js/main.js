@@ -34,4 +34,6 @@ $('.open-popup-link').magnificPopup({
     }
   },
   midClick: true,
+  closeMarkup: '<span title="%title%" class="mfp-close icon-close"></span>',
+  focus: '#email',
 });

@@ -47,7 +47,7 @@
 
 .sliding-panel-close {
   position: absolute;
-  left: calc(100% + $m);
+  left: 300px+16px;
   top: $m;
   display: none;
 }
@@ -87,37 +87,15 @@
     }
   }
 
-  &-promo {
-    display: table;
-    margin-bottom: $m;
-
-    &_image {
-      display: table-cell;
-      vertical-align: top;
-      overflow: hidden;
-      border-radius: 100px;
-      float: left;
-      margin-right: $m;
-
-      img {
-        display: block;
-      }
-    }
-    &_text {
-      display: table-cell;
-      vertical-align: top;
-    }
-    display: blog; //TIME
-  }
-
   &-authorization {
     @include sidebar-item;
-    display: blog; //TIME
+    display: block; //TIME
   }
 
   &-user {
     @include sidebar-item;
     display: none; //TIME
+    // display: block; //TIME
   }
 
   &-menu {
@@ -142,50 +120,3 @@
   }
 }
 
-.white-popup {
-  position: relative;
-  background: #FFF;
-  padding: 20px;
-  width:auto;
-  max-width: 500px;
-  margin: 20px auto;
-}
-
-/* ====== Zoom effect ====== */
-.mfp-zoom-in {
-
-  /* start state */
-  .mfp-with-anim {
-    opacity: 0;
-    @include transition(all 0.2s ease-in-out); 
-    @include transform(scale(0.8)); 
-  }
-  
-  &.mfp-bg {
-    opacity: 0;
-    @include transition(all 0.3s ease-out);
-  }
-
-  /* animate in */
-  &.mfp-ready {
-    .mfp-with-anim {
-      opacity: 1;
-      @include transform(scale(1)); 
-    }
-    &.mfp-bg {
-      opacity: 0.8;
-    }
-  }
-
-  /* animate out */
-  &.mfp-removing {
-    
-    .mfp-with-anim {
-      @include transform(scale(0.8)); 
-      opacity: 0;
-    }
-    &.mfp-bg {
-      opacity: 0;
-    }
-  }
-}

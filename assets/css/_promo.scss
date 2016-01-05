@@ -1,0 +1,45 @@
+.promo {
+  display: table;
+  text-align: left;
+  margin-bottom: $m;
+
+  &-image {
+    display: table-cell;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 100px;
+    float: left;
+    margin-right: $m;
+
+    img {
+      display: block;
+      min-width: 65px;
+      min-height: 65px;
+    }
+  }
+  &-text {
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+
+    &_secondary {
+      color: #a7a7a7;
+      font-family: 'PT Serif', serif;
+      font-style: italic;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .modal-registration & {
+    padding: 0 $m;
+  }
+
+  .modal-login & {
+    padding: $m;
+    background: #f0f0f0;
+  }
+
+  .sidebar & {
+  }
+}

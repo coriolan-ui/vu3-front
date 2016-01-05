@@ -6,7 +6,7 @@
   color: #424242;
   outline: none;
   text-transform: uppercase;
-  line-height: 38px;
+  line-height: 40px;
   height: 40px;
   box-sizing: border-box;
   border-radius: 20px;
@@ -44,6 +44,20 @@
   }
 }
 
+// btn group
 .btn + .btn {
   margin-left: 4px;
+}
+
+// icons
+.btn [class^="icon-"] {
+  font-size: 1.75em;
+  position: relative;
+  top: 5px;
+}
+.btn-icon-before [class^="icon-"] {
+  margin-right: 6px;
+}
+.btn-icon-after [class^="icon-"] {
+  margin-left: 6px;
 }

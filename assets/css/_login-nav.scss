@@ -1,0 +1,61 @@
+nav.login-nav {
+  margin-bottom: $m;
+
+  button {
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    // line-height: 40px;
+    outline: none;
+
+    &.vkontakte {
+      background: #4592cd;
+    }
+    &.odnoklassniki {
+      background: #f3ae0e;
+    }
+    &.mailru {
+      background: #1c4575;
+    }
+    &.facebook {
+      background: #36589b;
+    }
+    &.googleplus {
+      background: #e43e18;
+    }
+    &.yandex {
+      background: #eb2919;
+    }
+  }
+  button + button {
+    margin-left: 4px;
+  }
+}
+
+.or-line {
+  margin-bottom: $m;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+  }
+
+  span {
+    color: #a7a7a7;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    background: #fff;
+    padding: 0 $m;
+  }
+}

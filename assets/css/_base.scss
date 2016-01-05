@@ -18,9 +18,9 @@ body {
   color: $siteColor;
 }
 
-.wrapper {
-  @include outer-container;
-  overflow: hidden;
+a {
+  color: $firmColor;
+  text-decoration: none;
 }
 
 h1,
@@ -31,4 +31,9 @@ h5,
 h6,
 p {
   margin: 0 0 $m;
+}
+
+.wrapper {
+  @include outer-container;
+  overflow: hidden;
 }

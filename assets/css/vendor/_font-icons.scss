@@ -26,18 +26,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-// custom
-.btn [class^="icon-"], [class*=" icon-"] {
-  font-size: 1.75em;
-  position: relative;
-  top: 5px;
-  margin-right: 5px;
-}
-.btn-primary [class^="icon-"], [class*=" icon-"],
-.btn-ghost [class^="icon-"], [class*=" icon-"] {
-  margin-left: -7px;
-}
-
 .icon-expand-less:before {
     content: "\e904";
 }
