@@ -48,22 +48,17 @@
   max-width: 440px;
   margin: 40px auto;
   text-align: center;
-  padding-bottom: $m;
+  padding-bottom: $m*1.5;
   border-radius: 4px;
 
   &_caption {
     font-size: 22px;
     padding: 20px 55px;
     border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 20px;
-  }
+    // margin-bottom: 20px;
 
-  form {
-    padding: 0 $m;
-    margin-bottom: $m;
-
-    input {
-      width: 100%;
+    .modal-login & {
+      border: 0;
     }
   }
 }

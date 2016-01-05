@@ -2,5 +2,17 @@
   <div class="modal_caption">Регистрация</div>
   {% include promo.html %}
   {% include login-nav.html %}
-  <button type="submit" class="btn btn-primary btn-icon-after">Зарегистрироваться <span class="icon-arrow-forward"></span></button>
+
+  <form class="form">
+    <div class="input-holder">
+      <label for="email"><span class="icon-person"></span></label>
+      <input id="email" type="email" placeholder="Введите email">
+    </div>
+    <div class="input-holder">
+      <label for="password"><span class="icon-lock"></span></label>
+      <input id="password" type="password" placeholder="Придумайте пароль">
+    </div>
+    <button type="submit" class="btn btn-primary btn-icon-after">Зарегистрироваться <span class="icon-arrow-forward"></span></button>
+  </form>
+
 </div>

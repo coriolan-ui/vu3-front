@@ -2,16 +2,20 @@
   <div class="modal_caption">Вход</div>
   {% include promo.html %}
   {% include login-nav.html %}
-  <form>
-    <div>
-      <label for="email">email</label>
-      <input id="email" type="email">
+
+  <form class="form">
+    <div class="input-holder">
+      <label for="email"><span class="icon-person"></span></label>
+      <input id="email" type="email" placeholder="Введите email">
     </div>
-    <div>
-      <label for="password">password</label>
-      <input id="password" type="password">
+    <div class="input-holder">
+      <label for="password"><span class="icon-lock"></span></label>
+      <input id="password" type="password" placeholder="Введите пароль">
     </div>
     <button type="submit" class="btn btn-primary btn-icon-after">Вход <span class="icon-arrow-forward"></span></button>
   </form>
-  <a href="">Забыли пароль?</a>
+
+  <a href="#">Забыли пароль?</a>
 </div>
+  
+  

@@ -31,15 +31,18 @@
     }
   }
 
+  .sidebar & {
+  }
+
+  .modal & {
+  }
+
   .modal-registration & {
-    padding: 0 $m;
+    padding: $m $m 0;
   }
 
   .modal-login & {
     padding: $m;
     background: #f0f0f0;
-  }
-
-  .sidebar & {
   }
 }
