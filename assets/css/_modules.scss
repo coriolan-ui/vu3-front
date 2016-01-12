@@ -1,0 +1,28 @@
+.module {
+  margin: 0 -8px;
+  @include clearfix;
+
+  article {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding-bottom: 25%;
+
+    div {
+      border-radius: 4px;
+      overflow: hidden;
+      background: $firmColor;
+      @include position(absolute, 8px 8px 8px 8px);
+
+      a {
+
+        span {
+          @include position(absolute, null 0 0 0);
+          text-align: right;
+          color: $firmColor;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
