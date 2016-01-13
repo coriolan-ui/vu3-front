@@ -1,7 +1,9 @@
 ---
 layout: game
-category: releases
+category: games
 title: Lucky Drink
+widget: one
+money: 3,598,892.06 руб.
 ---
 
 Lucky Drink

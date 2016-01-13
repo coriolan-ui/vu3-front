@@ -1,8 +1,8 @@
 .module {
-  margin: 0 -8px;
+  margin: 0 -$m/2;
   @include clearfix;
 
-  article {
+  article.widget {
     position: relative;
     float: left;
     width: 25%;
@@ -10,19 +10,30 @@
 
     div {
       border-radius: 4px;
-      overflow: hidden;
+      // overflow: hidden;
       background: $firmColor;
-      @include position(absolute, 8px 8px 8px 8px);
+      @include position(absolute, $m/2 $m/2 $m/2 $m/2);
 
-      a {
+      span {
+        border-radius: 0 0 4px 4px;
+        @include position(absolute, null 0 0 0);
+        padding: $m/2;
+        text-align: right;
+        color: $firmColor;
+        background: #fff;
 
-        span {
-          @include position(absolute, null 0 0 0);
-          text-align: right;
-          color: $firmColor;
-          background: #fff;
+        a {
         }
       }
     }
+    // &.widget-one {
+    //   width: 25%;
+    // }
+    // &.widget-two {
+    //   width: 50%;
+    // }
+    // &.widget-three {
+    //   width: 75%;
+    // }
   }
 }

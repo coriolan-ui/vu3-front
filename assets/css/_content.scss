@@ -1,5 +1,5 @@
 .content {
-  padding: $m;
+  padding: 60px $m $m;
   @include transition(all 0.25s ease-in-out);
 
   @include media($tablet) {
@@ -7,8 +7,9 @@
   }
 
   &_header {
-    // position: fixed;
-    margin-bottom: $m;
+    position: fixed;
+    top: $m;
+    // margin-bottom: $m;
 
     @include media($tablet) {
       display: none;

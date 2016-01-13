@@ -1,7 +1,9 @@
 ---
 layout: game
-category: releases
+category: games
 title: King Of Cards
+widget: two
+money: 3,598,892.06 руб.
 ---
 
 King Of Cards
