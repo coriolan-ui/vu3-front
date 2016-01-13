@@ -40,15 +40,15 @@
   z-index: 1040;
 
   &.is-visible {
-    opacity: 0.4;
+    opacity: .4;
     visibility: visible;
   }
 }
 
 .sliding-panel-close {
-  position: absolute;
-  left: 300px+16px;
-  top: $m;
+  // @include position(absolute, 0 null null 0);
+  @include position(absolute, $m/2 null null $m);
+  // padding: $m/2 $m;
   display: none;
 }
 

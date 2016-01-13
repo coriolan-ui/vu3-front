@@ -1,20 +1,9 @@
 .content {
-  padding: 60px $m $m;
+  padding: 72px $m $m;
   @include transition(all 0.25s ease-in-out);
 
   @include media($tablet) {
+    padding-top: $m;
     margin-left: 300px;
   }
-
-  &_header {
-    position: fixed;
-    top: $m;
-    // margin-bottom: $m;
-
-    @include media($tablet) {
-      display: none;
-    }
-  }
 }
-
-

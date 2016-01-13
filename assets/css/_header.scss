@@ -1,0 +1,25 @@
+.header {
+  @include clearfix;
+  @include position(fixed, 0 null null 0);
+  padding: $m/2 $m;
+  background: $sidebarBg;
+  width: 100%;
+  text-align: center;
+
+  @include media($tablet) {
+    display: none;
+  }
+
+  .sliding-panel-button {
+    float: left;
+  }
+
+  .header_logo {
+    width: auto;
+    height: 36px;
+  }
+
+  .open-popup-link {
+    float: right;
+  }
+}

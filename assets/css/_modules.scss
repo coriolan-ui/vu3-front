@@ -10,9 +10,8 @@
 
     div {
       border-radius: 4px;
-      // overflow: hidden;
       background: $firmColor;
-      @include position(absolute, $m/2 $m/2 $m/2 $m/2);
+      @include position(absolute, $m/2);
 
       span {
         border-radius: 0 0 4px 4px;

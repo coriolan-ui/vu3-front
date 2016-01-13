@@ -1,7 +1,13 @@
 <main class="content">
 
-  <nav class="content_header">
-    <button type="button" class="btn btn-link btn-icon-before sliding-panel-button"><span class="icon-menu"></span> Menu</button>
+  <nav class="header">
+    <button type="button" class="btn btn-link btn-icon-before sliding-panel-button"><span class="icon-menu"></span> Меню</button>
+
+    <a href="{{ site.baseurl }}/">
+      <img class="header_logo" src="{{ site.baseurl }}/assets/img/brand/site-logo.png" data-at2x="{{ site.baseurl }}/assets/img/brand/site-logo@2x.png" />
+    </a>
+
+    <a href="#modalCashbox" class="btn btn-link btn-icon-before open-popup-link" data-effect="mfp-zoom-in"><span class="icon-wallet"></span> Касса</a>
   </nav>
 
   {{ content }}
