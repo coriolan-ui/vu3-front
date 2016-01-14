@@ -66,7 +66,7 @@
           display: table-cell;
           vertical-align: middle;
           @include transform(rotate(90deg));
-          @include transition(transform .2s linear);
+          @include transition(all .2s linear);
           @include transform-origin(50%);
         }
       }
