@@ -46,9 +46,7 @@
 }
 
 .sliding-panel-close {
-  // @include position(absolute, 0 null null 0);
   @include position(absolute, $m/2 null null $m);
-  // padding: $m/2 $m;
   display: none;
 }
 
@@ -94,12 +92,16 @@
   &-user {
     @include sidebar-item;
 
+    .user-avatar {
+      float: left;
+      margin-right: $m/2;
+    }
+
     .user-name {
+      @include ellipsis(172px);
+      font-size: 16px;
       line-height: 46px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      max-width: 160px;
+      float: left;
     }
 
     .badge {

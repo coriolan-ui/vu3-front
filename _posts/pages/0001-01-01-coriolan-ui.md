@@ -20,6 +20,7 @@ layout: default
 <br>
 <br>
 <h1>
+  <span class="icon-thumb-up"></span>
   <span class="icon-yandex"></span>
   <span class="icon-expand-less"></span>
   <span class="icon-expand-more"></span>

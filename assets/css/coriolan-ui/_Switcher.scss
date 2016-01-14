@@ -9,7 +9,6 @@
   $knob-width: $knob-size;
 
   cursor: pointer;
-  display: inline-block;
   position: relative;
 
   & * {
@@ -18,18 +17,22 @@
     }
   }
 
+  .switch-area {
+    @include clearfix;
+  }
+
   &-before {
     float: left;
     margin-right: $m/2;
-    color: rgba($colorInitial, .5);
     @include transition(color .2s linear);
+    color: inherit;
   }
 
   &-after {
     float: left;
     margin-left: $m/2;
-    color: inherit;
     @include transition(color .2s linear);
+    color: rgba($colorInitial, .5);
   }
 
   input {
@@ -43,9 +46,9 @@
         border-radius: 15px;
         cursor: pointer;
         position: relative;
-        width: $switch-width;
+        // width: $switch-width;
         z-index: 0;
-        margin: -$m/2 0;
+        margin: -6px 0;
         float: left;
         @include transition(all .2s linear);
       }
@@ -85,10 +88,10 @@
           }
         }
         .switch-before {
-          color: inherit;
+          color: rgba($colorInitial, .5);
         }
         .switch-after {
-          color: rgba($colorInitial, .5);
+          color: inherit;
         }
       }
     }

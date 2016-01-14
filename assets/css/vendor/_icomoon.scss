@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-thumb-up:before {
+    content: "\e90b";
+}
 .icon-yandex:before {
     content: "\e900";
 }

@@ -5,23 +5,71 @@
   article.widget {
     position: relative;
     float: left;
-    width: 25%;
-    padding-bottom: 25%;
+    width: 50%;
+    padding-bottom: 50%;
+    overflow: hidden;
 
-    div {
+    @include media($mobilePort) {
+      width: 50%;
+      padding-bottom: 50%;
+    }
+
+    @include media($mobileLand) {
+      width: 33.333333%;
+      padding-bottom: 33.333333%;
+    }
+
+    @include media($tablet) {
+      width: 33.333333%;
+      padding-bottom: 33.333333%;
+    }
+
+    @include media($desktop) {
+      width: 25%;
+      padding-bottom: 25%;
+    }
+
+    .container {
       border-radius: 4px;
-      background: $firmColor;
+      overflow: hidden;
       @include position(absolute, $m/2);
 
-      span {
-        border-radius: 0 0 4px 4px;
-        @include position(absolute, null 0 0 0);
-        padding: $m/2;
-        text-align: right;
-        color: $firmColor;
-        background: #fff;
+      .image-contur {
+        @include position(absolute, 0 0 0 0);
+        color: $colorInitial;
+        background: $colorPrimary;
 
-        a {
+        img {
+          @include position(absolute, 50% null null 50%);
+          @include transform(translate3d(-50%,-50%,0));
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+
+      .info {
+        @include position(absolute, null 0 0 0);
+        overflow: hidden;
+        // border-radius: 0 0 4px 4px;
+        padding: $m/2 $m/2 $m/2 50px;
+        text-align: right;
+        background: #fff;
+        color: $colorPrimary;
+
+        .game-title {
+          @include ellipsis(100%);
+          display: block;
+        }
+
+        .game-money {
+          @include ellipsis(100%);
+          display: block;
+        }
+
+        a.like {
+          @include position(absolute, 50% null null $m/2);
+          @include transform(translate3d(0,-50%,0));
         }
       }
     }
