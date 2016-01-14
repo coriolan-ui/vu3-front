@@ -1,13 +1,3 @@
-$m: 16px; //global margin
-
-$firmColor: #f5a623; //firm color
-
-$siteColor: #424242; // site text color
-$sidebarColor: #fff; // sidebar text color
-
-$siteBg: #eaeaea; // site background color
-$sidebarBg: #841F1B; // sidebar background color
-
 html {
   // margin-right: 15px;
   // overflow: hidden;
@@ -16,16 +6,6 @@ html {
 .is-overflowed {
   // margin-right: 15px;
   overflow: hidden;
-}
-
-body {
-  font: 400 14px/1.3 Roboto,sans-serif;
-  margin: 0;
-  position: relative;
-  min-width: 320px;
-  max-width: 1792px;
-  background: $siteBg;
-  color: $siteColor;
 }
 
 a {
@@ -46,4 +26,21 @@ p {
 .wrapper {
   @include outer-container;
   overflow: hidden;
+}
+
+
+.clearfix {
+  @include clearfix;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.margin-bottom {
+  margin-bottom: $m;
 }

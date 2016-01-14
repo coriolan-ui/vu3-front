@@ -89,13 +89,22 @@
 
   &-authorization {
     @include sidebar-item;
-    display: block; //TIME
   }
 
   &-user {
     @include sidebar-item;
-    display: none; //TIME
-    // display: block; //TIME
+
+    .user-name {
+      line-height: 46px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 160px;
+    }
+
+    .badge {
+      line-height: 46px;
+    }
   }
 
   &-menu {
