@@ -26,6 +26,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-vkontakte:before {
+    content: "\e90d";
+}
+.icon-mailru:before {
+    content: "\e90e";
+}
+.icon-odnoklassniki:before {
+    content: "\e90f";
+}
+.icon-facebook:before {
+    content: "\e910";
+}
+.icon-google-plus:before {
+    content: "\e90c";
+}
 .icon-thumb-up:before {
     content: "\e90b";
 }

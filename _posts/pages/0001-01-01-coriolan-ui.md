@@ -20,8 +20,14 @@ layout: default
 <br>
 <br>
 <h1>
-  <span class="icon-thumb-up"></span>
+  <span class="icon-vkontakte"></span>
+  <span class="icon-mailru"></span>
+  <span class="icon-odnoklassniki"></span>
+  <span class="icon-facebook"></span>
+  <span class="icon-google-plus"></span>
   <span class="icon-yandex"></span>
+  <br>
+  <span class="icon-thumb-up"></span>
   <span class="icon-expand-less"></span>
   <span class="icon-expand-more"></span>
   <span class="icon-arrow-forward"></span>
