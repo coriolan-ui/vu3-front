@@ -5,26 +5,29 @@
   article.widget {
     position: relative;
     float: left;
-    width: 50%;
-    padding-bottom: 50%;
     overflow: hidden;
 
-    @include media($mobilePort) {
+    @include media($One) {
+      width: 100%;
+      padding-bottom: 50%;
+    }
+
+    @include media($Two) {
       width: 50%;
       padding-bottom: 50%;
     }
 
-    @include media($mobileLand) {
+    @include media($Three) {
       width: 33.333333%;
       padding-bottom: 33.333333%;
     }
 
-    @include media($tablet) {
+    @include media($ThreeSidebar) {
       width: 33.333333%;
       padding-bottom: 33.333333%;
     }
 
-    @include media($desktop) {
+    @include media($Four) {
       width: 25%;
       padding-bottom: 25%;
     }

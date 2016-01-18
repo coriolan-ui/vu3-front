@@ -7,7 +7,7 @@
   text-align: center;
   z-index: 100;
 
-  @include media($tablet) {
+  @include media($ThreeSidebar) {
     display: none;
   }
 

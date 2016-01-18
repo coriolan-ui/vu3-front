@@ -26,7 +26,7 @@
     }
   }
 
-  @include media($tablet) {
+  @include media($ThreeSidebar) {
     @include transform(translateX(0));
   }
 }

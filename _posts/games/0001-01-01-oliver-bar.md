@@ -5,8 +5,7 @@ title: Oliver Bar
 widget: one
 money: 3,598,892.06 руб.
 likes: 25
-image: /assets/img/game/oliver-bar.jpg
-image2x: /assets/img/game/oliver-bar@2x.jpg
+image1x1: oliver-bar-1x1.jpg
 ---
 
-Oliver Bar
+Oliver Bar Description
