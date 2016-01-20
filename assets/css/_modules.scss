@@ -2,7 +2,7 @@
   margin: 0 -$m/2;
   @include clearfix;
 
-  article.widget {
+  .widget {
     position: relative;
     float: left;
     overflow: hidden;
@@ -33,9 +33,10 @@
     }
 
     .container {
+      @include position(absolute, $m/2);
       border-radius: 4px;
       overflow: hidden;
-      @include position(absolute, $m/2);
+      z-index: 10;
 
       .image-contur {
         @include position(absolute, 0 0 0 0);

@@ -12,7 +12,11 @@ layout: default
       <div class="container">
 
         <a href="{{ games.url }}" class="image-contur">
-          <img src="{{ site.baseurl }}/assets/img/game/{{ games.image1x1 }}" alt="{{ games.title }}"/>
+          <img
+            data-src="holder.js/660x660?auto=yes&text={{ games.title }}&fg=fff&bg=f5a623"
+            data-layzr="{{ site.baseurl }}/assets/img/game{{ games.id }}-1x1.jpg"
+            data-layzr-retina="{{ site.baseurl }}/assets/img/game{{ games.id }}-1x1@2x.jpg"
+          >
         </a>
 
         <div class="info">
