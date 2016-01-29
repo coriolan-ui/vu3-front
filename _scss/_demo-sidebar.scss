@@ -1,0 +1,16 @@
+.demo-sidebar {
+  position: relative;
+  text-align: left;
+  max-width: 1792px;
+  .img-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 299px;
+  }
+  .img-main {
+    width: 1310px;
+    height: auto;
+    display: block;
+  }
+}

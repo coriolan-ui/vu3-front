@@ -1438,3 +1438,17 @@ nav.login-nav {
     @media screen and (min-width: 1300px) {
       .module .game-widget:first-child, .module .game-widget:last-child {
         width: 50%; } }
+
+.demo-sidebar {
+  position: relative;
+  text-align: left;
+  max-width: 1792px; }
+  .demo-sidebar .img-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 299px; }
+  .demo-sidebar .img-main {
+    width: 1310px;
+    height: auto;
+    display: block; }
