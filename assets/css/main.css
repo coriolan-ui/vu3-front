@@ -1439,16 +1439,29 @@ nav.login-nav {
       .module .game-widget:first-child, .module .game-widget:last-child {
         width: 50%; } }
 
-.demo-sidebar {
+.demo {
   position: relative;
   text-align: left;
-  max-width: 1792px; }
-  .demo-sidebar .img-sidebar {
+  width: 1792px; }
+  .demo .img-bg {
     position: fixed;
     top: 0;
     left: 0;
-    width: 299px; }
-  .demo-sidebar .img-main {
-    width: 1310px;
+    width: 100%;
+    max-width: 1792px; }
+  .demo .img-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    z-index: 40; }
+  .demo .img-main {
+    width: 1792px;
+    padding-left: 300px;
+    box-sizing: border-box;
     height: auto;
-    display: block; }
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20; }
