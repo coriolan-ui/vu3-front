@@ -1,26 +1,28 @@
 .header {
-  @include clearfix;
-  @include position(fixed, 0 null null 0);
-  padding: $m/2 $m;
-  background: $sidebarBg;
-  width: 100%;
-  text-align: center;
-  z-index: 100;
+    @include clearfix;
+    @include position(fixed, 0 null null 0);
+    padding: $m/2 $m;
+    background: $sidebarBg;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
 
-  @include media($ThreeSidebar) {
-    display: none;
-  }
+    @include media($ThreeSidebar) {
+        display: none;
+    }
 
-  .sliding-panel-button {
-    float: left;
-  }
+    .sliding-panel-button {
+        float: left;
+    }
 
-  .header_logo {
-    width: auto;
-    height: 36px;
-  }
+    .header__logo {
+        img {
+            width: auto;
+            height: 36px;
+        }
+    }
 
-  .open-popup-link {
-    float: right;
-  }
+    .open-popup-link {
+        float: right;
+    }
 }

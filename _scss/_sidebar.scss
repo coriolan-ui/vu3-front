@@ -56,7 +56,8 @@
   width: 300px;
   height: 100%;
   color: $sidebarColor;
-  background: $sidebarBg;
+  // background: $sidebarBg;
+  background: url(/assets/img/bg.png);
 
   &-scrollfix {
     position: relative;
@@ -70,7 +71,7 @@
     padding: $m;
   }
 
-  &-logo {
+  &__logo {
     @include sidebar-item;
 
     a {
@@ -79,8 +80,9 @@
 
       img {
         max-width: 180px;
-        margin: auto;
+        height: auto;
         display: block;
+        margin: auto;
       }
     }
   }

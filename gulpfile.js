@@ -8,6 +8,7 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
+
 /**
  * Build the Jekyll Site
  */
@@ -17,12 +18,14 @@ gulp.task('jekyll-build', function (done) {
         .on('close', done);
 });
 
+
 /**
  * Rebuild Jekyll & do page reload
  */
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
+
 
 /**
  * Wait for jekyll-build, then launch the Server
@@ -35,11 +38,17 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     });
 });
 
+
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-    return gulp.src('_scss/main.scss')
+    return gulp.src([
+            '_scss/coriolan.scss',
+            '_scss/vu5.scss',
+            '_scss/vu10.scss',
+            '_scss/korona.scss'
+        ])
         .pipe(sass({
             includePaths: ['scss'],
             onError: browserSync.notify
@@ -50,6 +59,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -57,7 +67,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('_scss/**/*', ['sass']);
     gulp.watch([
-            '_layouts/*.html',
+            '_layouts/**/*.html',
             '_includes/**/*.html',
             '_posts/**/*',
             'assets/img/**/*',
@@ -66,6 +76,7 @@ gulp.task('watch', function () {
             '_config.yml'
         ], ['jekyll-rebuild']);
 });
+
 
 /**
  * Default task, running just `gulp` will compile the sass,

@@ -14,23 +14,17 @@ layout: compress
 
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500:latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400italic:latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/korona.css">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
 </head>
 <body>
 
-  <div class="wrapper">
-    {% include sidebar.html %}
-    {% include content.html %}
-    <h1 style="text-align: center;">{{ page.title }}</h1>
-  </div>
+  <a href="#modalCashbox" class="open-popup-link" data-effect="mfp-zoom-in">Касса</a>
 
-  {% include modalRegistration.html %}
-  {% include modalLogin.html %}
   {% include modalCashbox.html %}
 
-  <div style="height: 800px;"></div>
+  <div style="height: 1600px;"></div>
 
   <div class="sliding-panel-fade-screen"></div>
 
