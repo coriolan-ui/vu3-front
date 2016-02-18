@@ -1,9 +1,10 @@
 @import 'vendor/normalize';
 @import 'vendor/bourbon/bourbon';
-@import 'grid-settings';
+@import 'vendor/grid-settings';
 @import 'vendor/neat/neat';
 @import 'vendor/magnific-popup';
 
+$firmColor: #249e49; //firm color
 $m: 16px; //global margin
 @import 'modals';
 

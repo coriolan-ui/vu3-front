@@ -813,36 +813,66 @@ img.mfp-img {
 .modal {
   position: relative;
   background: #fff;
-  width: auto;
-  max-width: 440px;
+  width: 100%;
   margin: 40px auto;
   text-align: center;
-  padding-bottom: 24px;
   -webkit-border-radius: 4px;
-          border-radius: 4px; }
-  .modal_caption {
-    font-size: 22px;
-    padding: 20px 55px;
-    border-bottom: 1px solid #e6e6e6; }
-    .modal-login .modal_caption {
-      border: 0; }
+          border-radius: 4px;
+  overflow: hidden; }
+  .modal__header {
+    font-size: 20px;
+    padding: 0 55px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #249e49;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500; }
+    .modal__header [class^="icon-"] {
+      font-size: 24px;
+      margin-right: 5px;
+      position: relative;
+      top: 3px; }
+  .modal__body {
+    background: #f0f0f0; }
+  .modal__footer {
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase; }
+    .modal__footer [class^="icon-"] {
+      font-size: 16px;
+      margin-left: 5px;
+      position: relative;
+      top: 2px; }
+  .modal--login {
+    max-width: 440px; }
+  .modal--registration {
+    max-width: 440px; }
+  .modal--cashbox {
+    max-width: 684px; }
 
 .mfp-close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 5px;
+  right: 5px;
   width: 40px;
   height: 40px;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
-  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   padding: 0;
   cursor: pointer;
-  opacity: 1; }
+  opacity: 1;
+  -webkit-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out; }
+  .mfp-close:hover {
+    background: rgba(0, 0, 0, 0.1); }
   .mfp-close:active {
-    top: 15px; }
+    top: 5px; }
   .mfp-close.icon-close:before {
-    font-size: 20px;
+    font-size: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -851,11 +881,11 @@ img.mfp-img {
     transform: translate3d(-50%, -50%, 0); }
 
 .mfp-close-btn-in .mfp-close {
-  color: #838d8f; }
+  color: #fff; }
 
 .accordion-tabs-minimal {
-  line-height: 1.5;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   .accordion-tabs-minimal::after {
     clear: both;
     content: "";

@@ -26,26 +26,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-vkontakte:before {
-    content: "\e90d";
+.icon-close:before {
+    content: "\e90a";
 }
-.icon-mailru:before {
-    content: "\e90e";
+.icon-cached:before {
+    content: "\e911";
 }
-.icon-odnoklassniki:before {
-    content: "\e90f";
+.icon-local-activity:before {
+    content: "\e912";
 }
-.icon-facebook:before {
-    content: "\e910";
+.icon-event-note:before {
+    content: "\e914";
 }
-.icon-google-plus:before {
-    content: "\e90c";
+.icon-dashboard:before {
+    content: "\e916";
+}
+.icon-flag:before {
+    content: "\e917";
+}
+.icon-star:before {
+    content: "\e918";
 }
 .icon-thumb-up:before {
     content: "\e90b";
-}
-.icon-yandex:before {
-    content: "\e900";
 }
 .icon-verified-user:before {
     content: "\e901";
@@ -65,6 +68,12 @@
 .icon-expand-more:before {
     content: "\e906";
 }
+.icon-chevron-left:before {
+    content: "\e915";
+}
+.icon-chevron-right:before {
+    content: "\e913";
+}
 .icon-arrow-forward:before {
     content: "\e907";
 }
@@ -74,6 +83,21 @@
 .icon-person:before {
     content: "\e909";
 }
-.icon-close:before {
-    content: "\e90a";
+.icon-vkontakte:before {
+    content: "\e90d";
+}
+.icon-mailru:before {
+    content: "\e90e";
+}
+.icon-odnoklassniki:before {
+    content: "\e90f";
+}
+.icon-facebook:before {
+    content: "\e910";
+}
+.icon-google-plus:before {
+    content: "\e90c";
+}
+.icon-yandex:before {
+    content: "\e900";
 }

@@ -1,93 +1,102 @@
 <aside class="sliding-panel-content">
-  <div class="sidebar">
-    <div class="sidebar-scrollfix">
-      <div class="sidebar-container">
+    <div class="sidebar">
+        <div class="sidebar-scrollfix">
+            <div class="sidebar-container">
 
-        <button class="btn btn-link sliding-panel-close"><span class="icon-close"></span></button>
+                <button class="btn btn-link sliding-panel-close"><span class="icon-close"></span></button>
 
-        <div class="sidebar__logo">
-          <a href="{{ site.baseurl }}/">
-            <img src="{{ site.baseurl }}/assets/img/brand/logo-desk.png" alt="Site Logo">
-          </a>
-        </div>
-
-        <!-- {% include promo.html %}
-
-        <div class="sidebar-authorization">
-          <a href="#modalRegistration" class="btn btn-primary open-popup-link" data-effect="mfp-zoom-in">Регистрация</a>
-          <a href="#modalLogin" class="btn btn-ghost open-popup-link" data-effect="mfp-zoom-in">Вход</a>
-        </div> -->
-
-        <div class="sidebar-user">
-          <div class="clearfix margin-bottom">
-            <span class="float-left">
-              <img class="user-avatar" src="{{ site.baseurl }}/assets/img/user/avatar-sm.png" data-at2x="{{ site.baseurl }}/assets/img/user/avatar-sm@2x.png" />
-              <span class="user-name">Джордж Вашингтон</span>
-            </span>
-            <span class="badge float-right">
-              <span class="icon-comment"></span>
-              <span class="badge-item">3</span>
-            </span>
-          </div>
-
-          <div class="clearfix margin-bottom">
-            <span class="float-left">
-              Режим
-            </span>
-            <span class="float-right">
-              <label class="switch">
-                <input type="checkbox"/>
-                <div class="switch-area">
-                  <span class="switch-before">Fun</span>
-                  <div class="checkbox">
-                    <div class="switch-plumbus">
-                      <span class="icon-menu"></span>
-                    </div>
-                  </div>
-                  <span class="switch-after">Руб</span>
+                <div class="sidebar__logo">
+                    <a href="{{ site.baseurl }}/">
+                        <img src="{{ site.baseurl }}/assets/img/brand/logo-desk.png" alt="Site Logo">
+                    </a>
                 </div>
-              </label>
-            </span>
-          </div>
 
-          <div class="clearfix margin-bottom">
-            <span class="float-left">
-              Баланс
-            </span>
-            <span class="float-right">
-              13 500 руб.
-            </span>
-          </div>
+                <!-- <div class="promo">
+                    <div class="promo-image">
+                        <img src="{{ site.baseurl }}/assets/img/promo/motivation.png" data-at2x="{{ site.baseurl }}/assets/img/promo/motivation@2x.png"/>
+                    </div>
+                    <div class="promo-text">
+                        <div class="promo-text_secondary">Подарок</div>
+                        <div>Зарегистрируйся и получи +1 000 рублей</div>
+                    </div>
+                </div>
 
-          <div class="clearfix margin-bottom">
-            <span class="float-left">
-              Баллы
-            </span>
-            <span class="float-right">
-              347
-            </span>
-          </div>
+                <div class="sidebar-authorization">
+                    <a href="#modalRegistration" class="btn btn-primary open-popup-link" data-effect="mfp-zoom-in">Регистрация</a>
+                    <a href="#modalLogin" class="btn btn-ghost open-popup-link" data-effect="mfp-zoom-in">Вход</a>
+                </div> -->
 
-          <a href="#modalCashbox" class="btn btn-primary btn-icon-before open-popup-link" data-effect="mfp-zoom-in"><span class="icon-wallet"></span> Касса</a>
+                <div class="sidebar-user">
+                    <div class="clearfix margin-bottom">
+                        <span class="float-left">
+                            <span class="user-name">Джордж Вашингтон</span>
+                        </span>
+                        <span class="badge float-right">
+                            <span class="icon-comment"></span>
+                            <span class="badge-item">3</span>
+                        </span>
+                    </div>
+
+                    <div class="clearfix margin-bottom">
+                        <span class="float-left">
+                            Режим
+                        </span>
+                        <span class="float-right">
+                            <label class="switch">
+                                <input type="checkbox"/>
+                                <div class="switch-area">
+                                    <span class="switch-before">Fun</span>
+                                    <div class="checkbox">
+                                        <div class="switch-plumbus">
+                                            <span class="icon-menu"></span>
+                                        </div>
+                                    </div>
+                                    <span class="switch-after">Руб</span>
+                                </div>
+                            </label>
+                        </span>
+                    </div>
+
+                    <div class="clearfix margin-bottom">
+                        <span class="float-left">
+                            Баланс
+                        </span>
+                        <span class="float-right">
+                            13 500 руб
+                        </span>
+                    </div>
+
+                    <div class="clearfix margin-bottom">
+                        <span class="float-left">
+                            Баллы
+                        </span>
+                        <span class="float-right">
+                            347
+                        </span>
+                    </div>
+
+                    <a href="#modalCashbox" class="btn btn-primary btn-icon-before open-popup-link" data-effect="mfp-zoom-in"><span class="icon-wallet"></span> Касса</a>
+                </div>
+
+                <ul class="sidebar-menu">
+                    <li><a href="{{ site.baseurl }}/game-hall/"><span class="icon-dashboard"></span> Игровой зал</a></li>
+                    <li><a href="{{ site.baseurl }}/lottery/"><span class="icon-local-activity"></span> Лотерея</a></li>
+                    <li><a href="{{ site.baseurl }}/tournaments/"><span class="icon-flag"></span> Турниры</a></li>
+                    <li><a href="{{ site.baseurl }}/promotions/"><span class="icon-dashboard"></span> Промо</a></li>
+                    <li><a href="{{ site.baseurl }}/support/"><span class="icon-verified-user"></span> Поддержка</a></li>
+                </ul>
+
+                <br>
+
+                <ul class="sidebar-menu">
+                    <li><a href="{{ site.baseurl }}/vu5/">Vu5</a></li>
+                    <li><a href="{{ site.baseurl }}/vu10/">Vu10</a></li>
+                    <li><a href="{{ site.baseurl }}/korona/">Korona</a></li>
+                    <li><a href="{{ site.baseurl }}/coriolan-ui/">UI</a></li>
+                </ul>
+
+            </div>
         </div>
-
-        <ul class="sidebar-menu">
-          <!-- <li><a href="{{ site.baseurl }}/game-hall/">Игровой зал</a></li>
-          <li><a href="{{ site.baseurl }}/coriolan-ui/">Coriolan UI</a></li>
-          <li><a href="{{ site.baseurl }}/lottery/">Лотерея</a></li>
-          <li><a href="{{ site.baseurl }}/tournaments/">Турниры</a></li>
-          <li><a href="{{ site.baseurl }}/promotions/">Акции</a></li>
-          <li><a href="{{ site.baseurl }}/shop/">Магазин фишек</a></li>
-          <li><a href="{{ site.baseurl }}/news/">Новости</a></li>
-          <li><a href="{{ site.baseurl }}/video/">Видео</a></li>
-          <li><a href="{{ site.baseurl }}/plugin/">Скачать plugin</a></li> -->
-          <li><a href="{{ site.baseurl }}/vu5/">Vu5</a></li>
-          <li><a href="{{ site.baseurl }}/vu10/">Vu10</a></li>
-          <li><a href="{{ site.baseurl }}/korona/">Korona</a></li>
-        </ul>
-
-      </div>
     </div>
-  </div>
 </aside>
 

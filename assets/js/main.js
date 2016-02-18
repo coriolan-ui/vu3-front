@@ -47,16 +47,16 @@ $('.open-popup-link').magnificPopup({
 * layzr.js
 * http://callmecavs.github.io/layzr.js/
 */
-var layzr = new Layzr({
+// var layzr = new Layzr({
   // container: null,
   // selector: '[data-layzr]',
   // attr: 'data-layzr',
   // retinaAttr: 'data-layzr-retina',
   // bgAttr: 'data-layzr-bg',
   // hiddenAttr: 'data-layzr-hidden',
-  threshold: 0,
+  // threshold: 0,
   // callback: null
-});
+// });
 
 
 

@@ -7,17 +7,13 @@ permalink: game-hall/
 
 <div class="module">
 
-  {% for games in site.categories.games limit:10 %}
+  {% for games in site.categories.games limit:14 %}
     <article class="game-widget">
 
       <div class="container">
 
         <a href="{{ games.url }}" class="image-container">
-          <img
-            data-src="holder.js/660x660?auto=yes&text={{ games.title }}&fg=fff&bg=f5a623"
-            data-layzr="{{ site.baseurl }}/assets/img/game/{{ games.slug }}-1x1.jpg"
-            data-layzr-retina="{{ site.baseurl }}/assets/img/game/{{ games.slug }}-1x1@2x.jpg"
-          >
+          <img src="{{ site.baseurl }}/assets/img/game/{{ games.slug }}.png" alt="{{ games.title }}">
         </a>
 
         <div class="text-container">
