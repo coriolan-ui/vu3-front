@@ -1599,9 +1599,55 @@ nav.login-nav {
           margin-bottom: -1px; } }
   .accordion-tabs-minimal .tab-content {
     display: none;
-    padding: 1.5em 1.618em;
     width: 100%; }
     @media screen and (min-width: 40em) {
       .accordion-tabs-minimal .tab-content {
         border-top: 1px solid #dcdcdc;
         float: left; } }
+
+.etabs {
+  margin: 0;
+  padding: 0; }
+
+.tab {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  background: #eee;
+  border: solid 1px #999; }
+
+.tab a {
+  font-size: 14px;
+  line-height: 2em;
+  display: block;
+  padding: 0 10px;
+  outline: none; }
+
+.tab a:hover {
+  text-decoration: underline; }
+
+.tab.active {
+  background: #fff;
+  padding-top: 6px;
+  position: relative;
+  top: 1px;
+  border-color: #666; }
+
+.tab a.active {
+  font-weight: bold; }
+
+.tab-container .panel-container {
+  background: #fff;
+  border: solid #666 1px;
+  padding: 10px;
+  -moz-border-radius: 0 4px 4px 4px;
+  -webkit-border-radius: 0 4px 4px 4px; }
+
+.rub-to-fun__choice {
+  float: left;
+  width: 50%;
+  background: #fff;
+  margin-bottom: 16px; }
+
+.rub-to-fun__label {
+  cursor: pointer; }

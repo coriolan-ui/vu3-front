@@ -919,7 +919,6 @@ img.mfp-img {
           margin-bottom: -1px; } }
   .accordion-tabs-minimal .tab-content {
     display: none;
-    padding: 1.5em 1.618em;
     width: 100%; }
     @media screen and (min-width: 40em) {
       .accordion-tabs-minimal .tab-content {
