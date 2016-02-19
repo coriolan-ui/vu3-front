@@ -1,9 +1,0 @@
-.content {
-  padding: 72px $m $m;
-  @include transition(all 0.25s ease-in-out);
-
-  @include media($ThreeSidebar) {
-    padding-top: $m;
-    margin-left: 300px;
-  }
-}

@@ -1,3 +1,1 @@
-# Coriolan UI
-
-[coriolanix.github.io](http://coriolanix.github.io)
+# jekyll-language-plugin 
