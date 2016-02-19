@@ -6,6 +6,7 @@ url: "http://example.org"
 languages: ['en', 'de']
 
 # Build settings
+baseurl: /vu3-front
 markdown: kramdown
 
 gems:
