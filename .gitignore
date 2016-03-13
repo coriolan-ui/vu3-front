@@ -1,8 +1,6 @@
-*~
-*.old
-_site
+.idea
+.DS_Store
+node_modules
 .sass-cache
-.vendor
-.jekyll-metadata
-Gemfile.lock
-
+_site
+npm-debug.log
