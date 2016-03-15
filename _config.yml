@@ -1,2 +1,3 @@
-baseurl: 'empty3'
-exclude: ['README.md', 'CNAME']
+baseurl: ''
+# baseurl: '/blur'
+exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json', 'CNAME']
